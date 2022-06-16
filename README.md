@@ -38,3 +38,13 @@ git log
 to create version/commit all changes by git
 ```
 git commit -m "message"
+```
+
+to send version/changes to github
+```
+git push origin main
+```
+to check remote url
+```
+git remote -v 
+```
