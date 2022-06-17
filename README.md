@@ -1,7 +1,4 @@
-# machine_learning_project3
-this is second machine learning project
-
-
+# machine_learning_project3.
 Creating conda environment
 ```
 conda create -p venv python==3.7 -y
@@ -48,3 +45,30 @@ to check remote url
 ```
 git remote -v 
 ```
+
+to setup ci/cd pipeline in heroku we need 3 information
+1. HEROKU_EMAIL = vikashsingh5151@gmail.com
+2. HEROKU_API_KEY = ddf52241-20e0-46e5-b9a4-09a59e48d383
+3. HEROKU_APP_NAME = ml-regression-app-vikash1
+
+BUILD DOCKER IMAGE
+```
+docker build -t <image_name>:<tagname> .
+
+> NOTE : image name for docker must be lowercase
+ 
+ to list docker images
+ ```
+ docker images
+ ```
+ Run docker image
+ ```
+ docker run -p 5000:5000 -e PORT=5000 
+ ```
+ To check the running container in docker
+ ```
+ docker ps 
+ ```
+ tos stop docker container 
+ ```
+ docker stop <container_id> 
